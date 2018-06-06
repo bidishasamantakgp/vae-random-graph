@@ -9,7 +9,7 @@ while [ $a -lt $1 ]
 do
 	for i in ${nodes[@]}
 	do
-		python main.py --num_epochs=10 --learning_rate=0.005 --log_every 100 --graph_file=../../data/drug_like/lowPH/FINAL/n_$i --out_dir=../../data/drug_like/lowPH/FINAL/output_with_mask_new/ --sample_file ../../data/drug_like/lowPH/FINAL/sample_with_mask_new/ --z_dir ../../data/drug_like/lowPH/FINAL/sample_with_mask_new/ --random_walk 5 --z_dim 7 --nodes $i --mask_weight True >  ../../data/drug_like/lowPH/FINAL/output_with_mask_new/nohup.out
+		python main.py --num_epochs=10 --learning_rate=0.005 --log_every 100 --graph_file=data/n_$i --out_dir=output_with_mask/ --sample_file sample_with_mask/ --z_dir zspace_with_mask/ --random_walk 5 --z_dim 7 --nodes $i --mask_weight True >  output_with_mask/nohup.out
 	done
 	a=`expr $a + 1`
 done

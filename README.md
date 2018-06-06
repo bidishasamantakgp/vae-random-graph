@@ -3,7 +3,9 @@ Paper : https://arxiv.org/pdf/1802.05283.pdf
 
 # Required packages
 tensorflow 1.4.1
+
 rdkit >= 2016.03.4
+
 networkx 2.0
 
 # command to learn model

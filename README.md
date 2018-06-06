@@ -10,13 +10,15 @@
 
 ## Train model 
 
-  mkdir output_with_mask
-  mkdir sample_with_mask
-  mkdir zspace_with_mask
+  `mkdir output_with_mask`
 
-  echo "0" > output_with_mask/iteration.txt
+  `mkdir sample_with_mask`
 
-  ./batchingZINC.sh 100
+  `mkdir zspace_with_mask`
+
+  `echo "0" > output_with_mask/iteration.txt`
+
+  `./batchingZINC.sh 100`
 
 
 
@@ -33,4 +35,4 @@
   python checkvalidity.py sample_with_mask/ test.mol2 30 1 figure_with_mask/`
 
 ## check novelty
-  python novelty.py ZINC.smi smiles.smi
+  `python novelty.py ZINC.smi smiles.smi`

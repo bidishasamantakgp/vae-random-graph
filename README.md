@@ -8,11 +8,11 @@ rdkit >= 2016.03.4
 
 networkx 2.0
 
-## command to learn model
+## Command to learn model
 
 python main.py --num_epochs 10 --learning_rate 0.0001 --log_every 5 --z_dim <z> --random_walk <k> --edges <e> --nodes <n> --graph_file <graph> --z_dir <zspace> --sample_file <sample> --out_dir <outputfile> >  log.out
 
-## command to sample graph
+## Command to sample graph
 
 python sample.py --num_epochs 10 --learning_rate 0.0001 --log_every 5 --z_dim <z> --random_walk <k> --edges <e> --nodes <n> --graph_file <graph> --z_dir <zspace> --sample_file <sample> --out_dir <outputfile> > log.out
 
